@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "Nshima with Ifisashi",
+    "meal_type": "dinner",
+    "ingredients": [
+      {"name": "Maize Meal", "quantity": 2, "unit": "cups", "estimated_cost": 5.00},
+      {"name": "Rape Leaves", "quantity": 1, "unit": "bunch", "estimated_cost": 3.00},
+      {"name": "Tomatoes", "quantity": 3, "unit": "pieces", "estimated_cost": 4.50},
+      {"name": "Onions", "quantity": 1, "unit": "piece", "estimated_cost": 2.00},
+      {"name": "Groundnuts", "quantity": 0.5, "unit": "cup", "estimated_cost": 8.00}
+    ],
+    "preparation_steps": [
+      "Prepare nshima by boiling water and adding maize meal while stirring",
+      "For ifisashi, sauté onions and tomatoes",
+      "Add rape leaves and groundnuts, cook until tender",
+      "Serve nshima with ifisashi on the side"
+    ],
+    "nutrition_facts": {
+      "calories": 450,
+      "protein": 12,
+      "carbs": 75,
+      "fats": 10,
+      "fiber": 8
+    },
+    "preparation_time": 45,
+    "difficulty_level": "easy",
+    "cultural_tags": ["traditional", "zambian", "staple"],
+    "serves": 4
+  },
+  {
+    "id": 2,
+    "name": "Kapenta with Nshima",
+    "meal_type": "lunch",
+    "ingredients": [
+      {"name": "Kapenta", "quantity": 0.3, "unit": "kg", "estimated_cost": 13.50},
+      {"name": "Maize Meal", "quantity": 1.5, "unit": "cups", "estimated_cost": 3.75},
+      {"name": "Onions", "quantity": 2, "unit": "pieces", "estimated_cost": 4.00},
+      {"name": "Tomatoes", "quantity": 2, "unit": "pieces", "estimated_cost": 3.00},
+      {"name": "Cooking Oil", "quantity": 3, "unit": "tbsp", "estimated_cost": 2.00}
+    ],
+    "preparation_steps": [
+      "Clean and rinse kapenta",
+      "Sauté onions and tomatoes in oil",
+      "Add kapenta and fry until crispy",
+      "Prepare nshima separately",
+      "Serve together"
+    ],
+    "nutrition_facts": {
+      "calories": 380,
+      "protein": 25,
+      "carbs": 45,
+      "fats": 12,
+      "calcium": 150
+    },
+    "preparation_time": 30,
+    "difficulty_level": "medium",
+    "cultural_tags": ["traditional", "protein-rich", "zambian"],
+    "serves": 3
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-01-15",
+  "users": [
+    {
+      "user_id": "ZM001",
+      "demographics": {
+        "age": 32,
+        "gender": "female",
+        "height_cm": 165,
+        "weight_kg": 68,
+        "location": {
+          "city": "Lusaka",
+          "neighborhood": "Woodlands",
+          "coordinates": {"lat": -15.3875, "lng": 28.3228}
+        },
+        "family_size": 4,
+        "children_ages": [8, 12],
+        "activity_level": "moderate"
+      },
+      "health_profile": {
+        "health_goals": ["weight_loss", "more_energy"],
+        "dietary_restrictions": ["lactose_intolerant"],
+        "medical_conditions": ["none"],
+        "allergies": ["shellfish"],
+        "current_medications": [],
+        "pregnancy_status": "none",
+        "smoking_status": "non_smoker",
+        "alcohol_consumption": "occasional"
+      },
+      "dietary_preferences": {
+        "preferred_cuisines": ["zambian", "traditional"],
+        "disliked_foods": ["okra", "bitter_leaf"],
+        "preferred_tastes": ["savory", "mildly_spicy"],
+        "cooking_skills": "intermediate",
+        "available_cooking_time_weekday": 45,
+        "available_cooking_time_weekend": 90
+      },
+      "budget_constraints": {
+        "weekly_food_budget": 1200,
+        "budget_preference": "medium",
+        "shopping_frequency": "weekly",
+        "preferred_vendors": ["soweto_market", "shoprite"]
+      },
+      "created_at": "2024-01-10T08:30:00Z",
+      "last_updated": "2024-01-15T14:20:00Z"
+    },
+    {
+      "user_id": "ZM002",
+      "demographics": {
+        "age": 45,
+        "gender": "male",
+        "height_cm": 178,
+        "weight_kg": 85,
+        "location": {
+          "city": "Lusaka",
+          "neighborhood": "Kabulonga",
+          "coordinates": {"lat": -15.4000, "lng": 28.3000}
+        },
+        "family_size": 2,
+        "children_ages": [],
+        "activity_level": "sedentary"
+      },
+      "health_profile": {
+        "health_goals": ["diabetes_management", "blood_pressure"],
+        "dietary_restrictions": ["low_sodium", "diabetic_friendly"],
+        "medical_conditions": ["type_2_diabetes", "hypertension"],
+        "allergies": ["none"],
+        "current_medications": ["metformin", "lisinopril"],
+        "pregnancy_status": "not_applicable",
+        "smoking_status": "non_smoker",
+        "alcohol_consumption": "none"
+      },
+      "dietary_preferences": {
+        "preferred_cuisines": ["zambian", "modern_healthy"],
+        "disliked_foods": ["excess_oil", "too_sweet"],
+        "preferred_tastes": ["balanced", "herby"],
+        "cooking_skills": "beginner",
+        "available_cooking_time_weekday": 30,
+        "available_cooking_time_weekend": 60
+      },
+      "budget_constraints": {
+        "weekly_food_budget": 1800,
+        "budget_preference": "medium",
+        "shopping_frequency": "bi-weekly",
+        "preferred_vendors": ["pick_n_pay", "local_butchery"]
+      },
+      "created_at": "2024-01-12T10:15:00Z",
+      "last_updated": "2024-01-15T16:45:00Z"
+    },
+    {
+      "user_id": "ZM003",
+      "demographics": {
+        "age": 28,
+        "gender": "female",
+        "height_cm": 160,
+        "weight_kg": 55,
+        "location": {
+          "city": "Lusaka",
+          "neighborhood": "Chilenje",
+          "coordinates": {"lat": -15.4167, "lng": 28.2833}
+        },
+        "family_size": 1,
+        "children_ages": [],
+        "activity_level": "active"
+      },
+      "health_profile": {
+        "health_goals": ["muscle_gain", "fitness_performance"],
+        "dietary_restrictions": ["vegetarian"],
+        "medical_conditions": ["none"],
+        "allergies": ["peanuts"],
+        "current_medications": [],
+        "pregnancy_status": "none",
+        "smoking_status": "non_smoker",
+        "alcohol_consumption": "none"
+      },
+      "dietary_preferences": {
+        "preferred_cuisines": ["modern_healthy", "international"],
+        "disliked_foods": ["meat", "fish"],
+        "preferred_tastes": ["varied", "experimental"],
+        "cooking_skills": "advanced",
+        "available_cooking_time_weekday": 60,
+        "available_cooking_time_weekend": 120
+      },
+      "budget_constraints": {
+        "weekly_food_budget": 800,
+        "budget_preference": "low",
+        "shopping_frequency": "weekly",
+        "preferred_vendors": ["soweto_market", "local_farmers"]
+      },
+      "created_at": "2024-01-08T14:20:00Z",
+      "last_updated": "2024-01-15T11:30:00Z"
+    }
+  ],
+  "metadata": {
+    "total_users": 3,
+    "average_age": 35,
+    "gender_distribution": {"male": 1, "female": 2},
+    "common_health_goals": ["weight_loss", "diabetes_management", "muscle_gain"],
+    "data_collection_method": "mobile_app_onboarding"
+  }
+}

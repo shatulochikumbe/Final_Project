@@ -1,0 +1,51 @@
+# This would be a binary file containing serialized preference vectors
+# Structure example:
+{
+    "ZM001": {
+        "ingredient_preferences": {
+            "maize_meal": 0.8,
+            "rape_leaves": 0.7,
+            "tomatoes": 0.6,
+            "onions": 0.5,
+            "kapenta": 0.3
+        },
+        "cuisine_preferences": {
+            "zambian": 0.9,
+            "traditional": 0.8,
+            "modern": 0.2
+        },
+        "meal_type_preferences": {
+            "dinner": 0.8,
+            "lunch": 0.7,
+            "breakfast": 0.4
+        },
+        "health_preferences": {
+            "weight_loss": 0.9,
+            "high_fiber": 0.7,
+            "low_calorie": 0.6
+        }
+    },
+    "ZM002": {
+        "ingredient_preferences": {
+            "chicken": 0.7,
+            "beans": 0.6,
+            "sweet_potato": 0.5,
+            "cabbage": 0.4
+        },
+        "cuisine_preferences": {
+            "zambian": 0.6,
+            "modern_healthy": 0.8,
+            "traditional": 0.4
+        },
+        "meal_type_preferences": {
+            "lunch": 0.9,
+            "breakfast": 0.7,
+            "dinner": 0.5
+        },
+        "health_preferences": {
+            "diabetic_friendly": 0.9,
+            "low_sodium": 0.8,
+            "low_sugar": 0.9
+        }
+    }
+}

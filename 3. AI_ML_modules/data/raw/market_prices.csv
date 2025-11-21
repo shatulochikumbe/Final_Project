@@ -1,0 +1,16 @@
+market_id,vendor_name,ingredient_id,ingredient_name,category,price_per_kg,unit,date,quality,seasonality,location_lat,location_lng
+MKT001,Soweto Market Stall 12,ING001,Maize Meal,grains,8.50,kg,2024-01-15,good,year_round,-15.4167,28.2833
+MKT001,Soweto Market Stall 12,ING002,Cassava,roots_tubers,6.00,kg,2024-01-15,fresh,year_round,-15.4167,28.2833
+MKT001,Soweto Market Stall 12,ING003,Sweet Potato,roots_tubers,12.00,kg,2024-01-15,good,mar_sep,-15.4167,28.2833
+MKT001,Soweto Market Stall 12,ING004,Beans,legumes,18.00,kg,2024-01-15,premium,year_round,-15.4167,28.2833
+MKT001,Soweto Market Stall 12,ING005,Kapenta,protein,45.00,kg,2024-01-15,fresh,year_round,-15.4167,28.2833
+MKT002,Chilenje Market Stall 5,ING006,Chicken,protein,35.00,kg,2024-01-15,good,year_round,-15.4200,28.2800
+MKT002,Chilenje Market Stall 5,ING007,Rape Leaves,vegetables,10.00,bunch,2024-01-15,fresh,year_round,-15.4200,28.2800
+MKT002,Chilenje Market Stall 5,ING008,Tomatoes,vegetables,15.00,kg,2024-01-15,good,year_round,-15.4200,28.2800
+MKT002,Chilenje Market Stall 5,ING009,Onions,vegetables,12.00,kg,2024-01-15,fresh,year_round,-15.4200,28.2800
+MKT003,Shoprite Lusaka,ING001,Maize Meal,grains,9.50,kg,2024-01-15,premium,year_round,-15.4100,28.2900
+MKT003,Shoprite Lusaka,ING006,Chicken,protein,38.00,kg,2024-01-15,premium,year_round,-15.4100,28.2900
+MKT003,Shoprite Lusaka,ING008,Tomatoes,vegetables,16.00,kg,2024-01-15,organic,year_round,-15.4100,28.2900
+MKT004,Local Farm Cooperative,ING007,Rape Leaves,vegetables,8.00,bunch,2024-01-15,organic,year_round,-15.4300,28.2700
+MKT004,Local Farm Cooperative,ING010,Cabbage,vegetables,7.00,kg,2024-01-15,fresh,year_round,-15.4300,28.2700
+MKT004,Local Farm Cooperative,ING011,Carrots,vegetables,14.00,kg,2024-01-15,fresh,year_round,-15.4300,28.2700

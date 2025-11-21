@@ -1,0 +1,4 @@
+user_id,age,gender,height_cm,weight_kg,bmi,bmi_category,family_size,activity_level,health_goal_weight_loss,health_goal_muscle_gain,health_goal_diabetes_management,health_goal_energy,dietary_restriction_lactose,dietary_restriction_low_sodium,dietary_restriction_vegetarian,budget_range,weekly_budget,preferred_cuisine_zambian,preferred_cuisine_traditional,preferred_cuisine_modern,cooking_skill,available_cooking_time,location_lat,location_lng
+ZM001,32,female,165,68,24.98,normal,4,moderate,1,0,0,1,1,0,0,medium,1200,1,1,0,intermediate,45,-15.3875,28.3228
+ZM002,45,male,178,85,26.82,overweight,2,sedentary,0,0,1,0,0,1,0,medium,1800,1,0,1,beginner,30,-15.4000,28.3000
+ZM003,28,female,160,55,21.48,normal,1,active,0,1,0,0,0,0,1,low,800,0,0,1,advanced,60,-15.4167,28.2833

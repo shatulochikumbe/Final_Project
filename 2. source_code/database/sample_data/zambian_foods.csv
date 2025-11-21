@@ -1,0 +1,10 @@
+name,category,price_per_kg,nutrition_per_100g,seasonality,local_name
+"Maize","Grains",8.50,"{'calories': 365, 'protein': 9, 'carbs': 74, 'fats': 4}","Year-round","Maize"
+"Cassava","Roots",6.00,"{'calories': 160, 'protein': 1, 'carbs': 38, 'fats': 0}","Year-round","Cassava"
+"Sweet Potato","Roots",12.00,"{'calories': 86, 'protein': 1.6, 'carbs': 20, 'fats': 0.1}","Mar-Sep","Sweet Potato"
+"Beans","Legumes",18.00,"{'calories': 127, 'protein': 9, 'carbs': 23, 'fats': 0.5}","Year-round","Beans"
+"Kapenta","Protein",45.00,"{'calories': 93, 'protein': 18, 'carbs': 0, 'fats': 2}","Year-round","Kapenta"
+"Chicken","Protein",35.00,"{'calories': 165, 'protein': 31, 'carbs': 0, 'fats': 3.6}","Year-round","Chicken"
+"Rape Leaves","Vegetables",10.00,"{'calories': 32, 'protein': 3, 'carbs': 4, 'fats': 0.5}","Year-round","Rape"
+"Tomatoes","Vegetables",15.00,"{'calories': 18, 'protein': 0.9, 'carbs': 3.9, 'fats': 0.2}","Year-round","Tomatoes"
+"Onions","Vegetables",12.00,"{'calories': 40, 'protein': 1.1, 'carbs': 9.3, 'fats': 0.1}","Year-round","Onions"

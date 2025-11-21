@@ -1,0 +1,11 @@
+recipe_id,name,meal_type,preparation_time,difficulty_level,cost_per_serving,ingredient_count,calories,protein,carbs,fats,fiber,sugar,sodium,is_traditional,is_zambian,is_modern,is_quick,is_healthy,seasonality,serves
+RCP001,Nshima with Ifisashi,dinner,45,easy,55.50,5,450,12,75,10,8,2,300,1,1,0,0,1,year_round,4
+RCP002,Kapenta with Nshima,lunch,30,medium,65.25,4,380,25,45,12,3,1,180,1,1,0,1,1,year_round,3
+RCP003,Vegetable Stir-fry with Nshima,dinner,25,easy,42.75,6,320,8,55,8,6,4,150,0,1,1,1,1,year_round,3
+RCP004,Bean Stew with Nshima,lunch,40,medium,38.50,5,410,15,60,10,12,3,200,1,1,0,0,1,year_round,4
+RCP005,Chicken Stew with Nshima,dinner,50,medium,72.80,6,480,30,50,15,4,2,350,1,1,0,0,1,year_round,4
+RCP006,Healthy Oatmeal Breakfast,breakfast,15,easy,18.25,4,280,10,45,5,6,8,50,0,0,1,1,1,year_round,2
+RCP007,Fruit Salad with Yogurt,breakfast,10,easy,24.50,5,180,6,35,2,4,25,30,0,0,1,1,1,year_round,2
+RCP008,Sweet Potato Mash with Vegetables,dinner,35,medium,31.20,5,290,5,55,6,7,12,120,0,1,1,0,1,mar_sep,3
+RCP009,Vegetable Curry with Rice,dinner,40,intermediate,48.90,7,350,9,60,10,8,6,280,0,0,1,0,1,year_round,3
+RCP010,Scrambled Eggs with Tomatoes,breakfast,20,easy,22.75,4,220,15,5,15,2,3,400,0,1,1,1,1,year_round,2

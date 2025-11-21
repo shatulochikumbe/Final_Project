@@ -1,0 +1,11 @@
+date,city,temperature_avg,temperature_max,temperature_min,precipitation_mm,humidity_percent,season,weather_condition
+2024-01-15,Lusaka,25,30,20,0,65,dry_season,sunny
+2024-01-14,Lusaka,24,29,19,2,70,dry_season,partly_cloudy
+2024-01-13,Lusaka,26,31,21,0,60,dry_season,sunny
+2024-01-12,Lusaka,23,28,18,5,75,dry_season,light_rain
+2024-01-11,Lusaka,22,27,17,8,80,dry_season,rainy
+2024-01-10,Lusaka,25,30,20,0,65,dry_season,sunny
+2024-01-09,Lusaka,26,32,21,0,55,dry_season,sunny
+2024-01-08,Lusaka,24,29,19,3,72,dry_season,partly_cloudy
+2024-01-07,Lusaka,23,28,18,6,78,dry_season,rainy
+2024-01-06,Lusaka,25,31,20,0,63,dry_season,sunny
