@@ -1,0 +1,144 @@
+version: '3.8'
+
+services:
+  zanuri-ai:
+    build: 
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: zanuri_ai
+    restart: unless-stopped
+    runtime: nvidia  # NVIDIA GPU support
+    env_file:
+      - environment_variables.env
+    environment:
+      - DATABASE_URL=postgresql://zanuri:${DB_PASSWORD}@db:5432/zanuri_ai
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ../:/home/zanuri
+      - model_volume:/home/zanuri/models
+      - data_volume:/home/zanuri/data
+      - log_volume:/home/zanuri/logs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      - db
+      - redis
+    networks:
+      - zanuri_network
+
+  db:
+    image: postgres:15
+    container_name: zanuri_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: zanuri_ai
+      POSTGRES_USER: zanuri
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../deployment/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - zanuri_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: zanuri_redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 1gb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    networks:
+      - zanuri_network
+
+  nginx:
+    image: nginx:1.25-alpine
+    container_name: zanuri_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - log_volume:/home/zanuri/logs
+    depends_on:
+      - zanuri-ai
+    networks:
+      - zanuri_network
+
+  celery-worker:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: zanuri_celery_worker
+    restart: unless-stopped
+    runtime: nvidia
+    env_file:
+      - environment_variables.env
+    command: celery -A app.tasks.celery_app worker --loglevel=info --concurrency=2
+    volumes:
+      - ../:/home/zanuri
+      - model_volume:/home/zanuri/models
+      - data_volume:/home/zanuri/data
+      - log_volume:/home/zanuri/logs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      - db
+      - redis
+    networks:
+      - zanuri_network
+
+  celery-beat:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: zanuri_celery_beat
+    restart: unless-stopped
+    env_file:
+      - environment_variables.env
+    command: celery -A app.tasks.celery_app beat --loglevel=info
+    volumes:
+      - ../:/home/zanuri
+    depends_on:
+      - db
+      - redis
+    networks:
+      - zanuri_network
+
+  monitor:
+    image: grafana/grafana:10.0.0
+    container_name: zanuri_monitor
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+    networks:
+      - zanuri_network
+
+volumes:
+  postgres_data:
+  redis_data:
+  model_volume:
+  data_volume:
+  log_volume:
+  grafana_data:
+
+networks:
+  zanuri_network:
+    driver: bridge
